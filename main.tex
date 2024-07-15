@@ -16,6 +16,7 @@
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{ragged2e}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -45,7 +46,7 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
 	\item\small{
-		\textbf{#1}{: #2 \vspace{-2pt}}
+		\textbf{#1}{#2 \vspace{-2pt}}
 	}
 }
 
@@ -63,6 +64,13 @@
 	\end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeCertification}[2]{
+	\vspace{-1pt}\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		% \textit{#3} & \textit{#4} \\
+	\end{tabular*}\vspace{-5pt}
+}
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
 
@@ -81,8 +89,13 @@
 	%----------HEADING-----------------
 	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 		\textbf{{\LARGE Yashkumar Maheshwari}} \\
-            \href{mailto:yash37m@gmail.com}{yash37m@asu.edu} $\vert$ { +1-(602) 884 6837} $\vert$ {Tempe, Arizona, United States}\\
-		\href{https://www.linkedin.com/in/yash37m}{linkedin.com/in/yash37m} $\vert$ \href{https://github.com/yash37m}{github.com/yash37m} \\
+            \href{mailto:yash37m@gmail.com}{yash37m@gmail.com} 
+            $\vert$ {602-884-6837} 
+		  $\vert$ \href{https://www.linkedin.com/in/yash37m}{linkedin.com/in/yash37m} 
+            $\vert$ \href{https://github.com/yash37m}{github.com/yash37m} 
+            $\vert$ {Seattle, WA, USA}\\
+            
+            
 	\end{tabular*}
 	
 	%-----------EDUCATION-----------------
@@ -90,139 +103,161 @@
 	
 	
 	\section{Education}
-	\resumeSubHeadingListStart
-	\resumeSubheading
-        {Master of Science - Computer Software Engineering}{Aug'22 - Present}
-	{Arizona State University}{Tempe, Arizona, USA}
-	{\scriptsize \textit{ \footnotesize{\newline{}\textbf{Current GPA:} 3.63/4.0}      
-        % {\newline{}\textbf{Scholarships:} New American University Scholar worth \$ 6,000/year}
-        {\newline{}\textbf{Courses:} Foundation of software Engineering, Software Design, Advanced Data Structures and Algorithms,  Game Designing,\newline{} Human Computer Interaction, Software Verification-Validation and Testing, Semantic Web Engineering.}}}
+    	\resumeSubHeadingListStart
+        	\resumeSubheading
+                {Master of Science - Computer Software Engineering}{Aug '22 - May '24}
+        	   {Arizona State University - 3.7/4.0}{Tempe, AZ, USA}
+        	   {\scriptsize \textit{ \footnotesize
+                % {\newline{}\textbf{Current GPA:} 3.63/4.0}      
+                % {\newline{}\textbf{Scholarships:} New American University Scholar worth \$ 6,000/year}
+                {\newline{}\textbf{Courses:} Software Design, Game Programming and Design, Human Computer Interaction, Semantic Web Engineering,\newline{} Software Verification-Validation and Testing.}}}
+        	
+        	\resumeSubheading
+                {Bachelor of Engineering - Computer Engineering}{Jul '18 - Jun '22}
+                {Gujarat Technological University - 8.96/10}{Ahmedabad, India}
+                {\scriptsize \textit{ \footnotesize
+                %{\newline{}\textbf{GPA:} 8.96/10.0}
+                {\newline{}\textbf{Courses:} Data Structures and Algorithms, Database Management System, Cloud Computing, Machine Learning, Artificial Intelligence.}}}
+        		
+    	\resumeSubHeadingListEnd
 	
-	\resumeSubheading
- {Bachelor of Engineering - Computer Engineering}{Jul '18 - May '22}
-	{Gujarat Technological University}{Ahmedabad, Gujarat, India}
-	{\scriptsize \textit{ \footnotesize{\newline{}\textbf{GPA:} 8.96/10.0}
-    {\newline{}\textbf{Courses:} Data Structures and Algorithms, Operating Systems, Software Engineering, Database Management System, Artificial Intelligence, Computer Networks, Machine Learning, Data Mining.}}}
-		
-	\resumeSubHeadingListEnd
-	
-	\vspace{3pt}
+	% \vspace{pt}
 	
 	
 	\section{Skills Summary}
-	\resumeSubHeadingListStart
-	\resumeSubItem{Languages}{\hspace{0.5cm}Python, Java, C++, JavaScript, C\#}
-	%\vspace{2pt}
-	\resumeSubItem{Frameworks}{\hspace{0.2cm}SK Learn, TensorFlow, Keras, Django, Dialogflow, Pandas, Matplotlib, Open CV, Spring}
-	%\vspace{2pt}
-	\resumeSubItem{Tools}{\hspace{1.3cm}GIT, AWS, MySQL, MongoDB, Celery, Docker, Kubernetes, Jira, LaTeX}
-	%\vspace{2pt}
-	% \resumeSubItem{Platforms}{\hspace{0.6cm}Linux, Windows, MacOS}
-	% %\vspace{2pt}
-	\resumeSubItem{Soft Skills}{\hspace{0.56cm}Leadership, Collaborative Working, Event Management, Public Speaking, Time Management}
-	
-	\resumeSubHeadingListEnd
-	\vspace{7pt}
-	
-	
-	
-	
+    	\resumeSubHeadingListStart
+        	\resumeSubItem{Languages}{\hspace{0.5cm}: Python, Java, C++, C\#, JavaScript, React}
+        	%\vspace{2pt}
+        	\resumeSubItem{Frameworks}{\hspace{0.2cm}: Django, Flask, Spring Boot, Pandas, NumPy, SK Learn, TensorFlow, Dialogflow, Matplotlib, Open CV}
+        	%\vspace{2pt}
+                % \resumeSubItem{Certification}{\hspace{0.2cm}: AWS Certified Cloud Practitioner}
+        	\resumeSubItem{Tools}{\hspace{1.3cm}: GIT, Jira, AWS, MySQL, MongoDB, Celery, Docker}
+        	%\vspace{2pt}
+        	% \resumeSubItem{Platforms}{\hspace{0.6cm}Linux, Windows, MacOS}
+        	% %\vspace{2pt}
+        	\resumeSubItem{Soft Skills}{\hspace{0.50cm}: Leadership, Collaborative Working, Event Management, Public Speaking, Time Management}
+        	
+    	\resumeSubHeadingListEnd
+	\vspace{2pt}
 		
+	\section{Certification}
+       
+        \resumeSubHeadingListStart
+        \resumeCertification{AWS Certified Cloud Practitioner (CLF-C02)}{May '24}
+        \resumeSubHeadingListEnd
+
+    \vspace{2pt}
+        
 	\section{Work Experience}
-	\resumeSubHeadingListStart
-	%\resumeSubheading
-        %{Tolleson Elementary School Tutor}{Nov '22 - Present}
-	%{Arizona State University}{Downtown Campus}
-	%\resumeItemListStart
-	%\resumeItem{Student Worker III}{Currently a Student Worker III at ASU and serving as an Elementary school tutor, tutoring kids in subjects of 
-	%mathematics and english.}
-	%\resumeItem{Mentoring their progress}{Mentoring students so that they can cope up with physical studies especially after COVID-19 and ensuring their mental health}
-	%\resumeItem{Collaborating with Teachers}{Worked together with teachers and staff to bridge any gaps in education and ensured that students are doing well in the class}
-	%\resumeItem{Assisting in Managerial duties}{Performed any necessary managerial duties required for smooth functioning of schools}
-	%\resumeItemListEnd
-	\resumeSubheading
-        {Software Development Intern (AI/ML)}{Jan '22 - Jul '22}
-        {Fero.Ai}{Ahmedabad, India}
-	\resumeItemListStart
-        \resumeItem {Responsibility}{Worked with Intelligent Virtual Assistant(IVA) Team and added functionalities to existing product, built chat-bots for Logistics and Supply Chain Industry with Dialogflow NLU Engine and Django as backend.}
-	\resumeItem{Prototype Tool}{Integrated Dialogflow with Django to the presentation tool allowing to create dynamic conversation without explicit typing, saving time for developers to understand the product by 30\%.}
-	\resumeItem{Route Optimization}{Pre-processed data worth 80k instances, and designed models to replace existing static route optimization service with in house ML enabled tool cutting companies cost to 50\%.}
-         \resumeItem{Feature Addition}{Led a team with 2 interns to use Google Translate API to satisfy the translation and enable language switching in between conversations. Used Redis to reduce the average response time by 50\% i.e. from 6 sec to 3 sec.}
-	\resumeItemListEnd
-	\resumeSubheading
-        {Data Science and Business Analyst Intern}{Jul '21 -  Aug '21}
-	{The Sparks Foundation}{Remote}
-	\resumeItemListStart
-	\resumeItem{Learning}
-	{Applied and understood basic Machine Learning Algorithms and implementation}
-        \resumeItem{Exploratory Data Analysis}{Performed EDA on 10K instances and create visualizations for sales of a superstore.}
-	\resumeItem{Stock Prices Variation from News Headlines}
-	{Conducted Time series Analysis to predict the changes in the stock prices based on the nature of the headlines on that day, where positive headlines caused stock to rise and negative to drop.}
-	\resumeItemListEnd
- %        \resumeSubheading
- %            {Web Development Intern}{May '21 - Jun '21}
- %            {Creart Solution}{Remote}
-	% \begin{itemize}
-	% 	\item\small Developed an admin panel and provided CRUD operations for a ceramic company website using PHP backend, Laravel and MySQL database and 
- %            built a project management Web Application with Laravel containing features such as task management, tracking and assignment.
-	% 	%\vspace{-2pt}
-	% 	% \item\small Built a project management Web Application with Laravel containing features such as task management, tracking and assignment.
-	% 	% \vspace{-2pt}
-	% \end{itemize}
- 
-    \resumeSubheading
-        {Software Development Volunteer}{Apr '21 -  Jul '21}
-	{Dhanvantri Covid Hospital -  Government of India}{Ahmedabad, India}
-	\resumeItemListStart
-	\resumeItem{Data Processing}
-	{Processed data stored in PostgreSQL on patient details, to make it usable for visualizations.}
-        \resumeItem{Data Visualizations}{Created Bar Charts, Line graphs and Pie Charts for press release to visualize Patients admitted, Patient Recovery, Patients Discharged (Normal, DAMA), Death. with average 800 patients on premise daily.}
-	\resumeItem{Dashboard Development}
-	{Developed a complete dashboard with features like timeline and data scrolling, providing an interactive interface for users.}
-	\resumeItemListEnd
-	\resumeSubHeadingListEnd
-	
+        \justify{
+        	\resumeSubHeadingListStart
+            	%\resumeSubheading
+                %{Tolleson Elementary School Tutor}{Nov '22 - Present}
+            	%{Arizona State University}{Downtown Campus}
+                	%\resumeItemListStart
+                    	%\resumeItem{Student Worker III}{Currently a Student Worker III at ASU and serving as an Elementary school tutor, tutoring kids in subjects of 
+                    	%mathematics and english.}
+                    	%\resumeItem{Mentoring their progress}{Mentoring students so that they can cope up with physical studies especially after COVID-19 and ensuring their mental health}
+                    	%\resumeItem{Collaborating with Teachers}{Worked together with teachers and staff to bridge any gaps in education and ensured that students are doing well in the class}
+                    	%\resumeItem{Assisting in Managerial duties}{Performed any necessary managerial duties required for smooth functioning of schools}
+                	%\resumeItemListEnd
+                \resumeSubheading
+                    {Software Development Volunteer}{Jan '24 -  Apr '24}
+                	{Kutta Technologies - Capstone Sponsor for Arizona State University}{Remote}
+                	\resumeItemListStart
+                    	\resumeItem{}{Applied \textbf{agile software development} practices and conducted research for various optimization techniques.}
+                            \resumeItem{}{Optimized \textbf{object detection} on Small Mission Computer and increased accuracy by \textbf{4\%}.}
+                    	% \resumeItem{}{Conducted research for various optimization techniques including and excluding GPU acceleration.}
+                	\resumeItemListEnd
+                 
+                 \resumeSubheading
+                    {Software Development Intern (AI/ML)}{Jan '22 - Jul '22}
+                    {Fero.Ai}{Ahmedabad, India}	
+                    \resumeItemListStart
+                        % \resumeItem {}{Reported Intelligent Virtual Assistant(IVA) Team and added functionalities to existing product, built chat-bots for Logistics and Supply Chain Industry with Dialogflow NLU Engine and Django as backend.}
+                        \resumeItem {}{Built chat-bots for Logistics and Supply Chain Industry with \textbf{Dialogflow} NLU Engine and \textbf{Django} as backend.}
+                        \resumeItem{}{Integrated Dialogflow with Django to presentation tool allowing to create dynamic conversation without explicit typing, saving time for developers to understand product by \textbf{25\%.}}
+                        \resumeItem{}{Pre-processed data worth \textbf{82,000} instances, and designed models to replace existing static route optimization service with in house ML enabled tool cutting companies cost to \textbf{37\%}.}
+                         \resumeItem{}{\textbf{Led} a team of interns to leverage the Google Translate API to satisfy translation needs and enable language switching between conversations and utilized \textbf{Redis} to cut down average response time by \textbf{42\%}, from 6.2 seconds to 3.6 seconds.}
+                        % \resumeItem{}{Utilized Redis to cut down average response time by 42\%, from 6.2 seconds to 3.6 seconds.}
+                	\resumeItemListEnd
+                 
+                \resumeSubheading
+                    {Data Science and Business Analyst Intern}{Jul '21 -  Aug '21}
+                    {The Sparks Foundation}{Remote}
+                    \resumeItemListStart
+                       % \resumeItem{}{Learnt and applied basic Machine Learning Algorithms and implementation.}
+                        \resumeItem{}{Performed \textbf{EDA} on 10,200 instances and create visualizations for sales of a superstore.}
+                        \resumeItem{}{Conducted \textbf{Time Series Analysis} where positive headlines led to a 2.5\% rise in stock price and negative caused a 1.8\% drop.}
+                	\resumeItemListEnd
+                 
+                \resumeSubheading
+                    {Web Development Intern}{Jun '21 - Jul '21}
+                    {Creart Solution}{Remote}
+                    \resumeItemListStart
+                        \resumeItem{}{Developed an admin panel, provided CRUD operations for ceramic company website using \textbf{PHP backend, Laravel and MySQL database.}}
+                        \resumeItem{}{Built a project management Web App with Laravel containing features such as task management, tracking and assignment.}
+                    \resumeItemListEnd
+                 
+                \resumeSubheading
+                    {Software Development Volunteer}{Apr '21 -  Jun '21}
+                	{Dhanvantri Covid Hospital}{Ahmedabad, India}
+                	\resumeItemListStart
+                        \resumeItem{} {Processed data stored in \textbf{PostgreSQL} on patient details, to make it usable for visualizations.}
+                        \resumeItem{}{Devised Bar Charts, Line graphs and Pie Charts for press release to visualize Patients admitted, Patient Recovery, Patients Discharged (Normal, DAMA), Death. with average 800 patients on premise daily.}
+                        \resumeItem{} {Developed a complete dashboard with featuring timeline and data scrolling, reducing user task time by \textbf{19\%} and making data easily accessible.}
+                	\resumeItemListEnd
+            \resumeSubHeadingListEnd
+        }
 	%-----------PROJECTS-----------------
-	\vspace{7pt}
+ 
+	\vspace{2pt}
 	\section{Projects}
 	\resumeSubHeadingListStart
+        \justify{
+            \resumeCertification{Sudoku Solver / Challenger}{Aug '23 - Present}
+                \resumeItemListStart
+                    \resumeItem{}{Solve a Sudoku, verify Solution to a Sudoku and allows to design a Sudoku board to challenge someone else.}
+                \resumeItemListEnd
 
-        \resumeSubItem{Sudoku Solver / Challenger}
-        \newline{}
-        \vspace{3pt}
-        Solve a Sudoku, verify your Solution to a Sudoku and allows to create a Sudoku board to challenge someone else.
-	
-        \resumeSubItem{Safe-Screen : Non Invasive Child Monitoring app}
-        \resumeItemListStart
-        \resumeItem{Created REST APIs}{Developed REST APIs using Java to fetch data from different sources.}
-        \resumeItem{Optimized data storage}{Optimized data storage using PostgreSQL, reducing data fetching times by 17\%.}
-        \resumeItem{Data pipeline}{Created a data pipeline for sending and processing data to perform different functions.}
-        \resumeItemListEnd
+            \resumeCertification{Disease Predictor}{Sep '23 - Nov '23}
+                \resumeItemListStart
+                    \resumeItem{}{Constructed \textbf{OWL} dataset with \textbf{81,000} instances and hosted it to Stardog.}
+                    \resumeItem{}{Designed rules to fetch disease according to user provided symptoms.}
+                    % \resumeItem{}{Educated people by providing brief of disease and visualizing of severity of symptom using javaScript.}
+                \resumeItemListEnd
+            
+            \resumeCertification{Safe-Screen : Non Invasive Child Monitoring app}{Feb '23 - Apr '23}
+                \resumeItemListStart
+                    \resumeItem{}{Constructed \textbf{REST APIs} using \textbf{Java} to fetch data from different sources.}
+                    % \resumeItem{}{Optimized data storage deploying PostgreSQL, reducing data fetching times by 17\%.}
+                    \resumeItem{}{Designed data pipeline to send and process data, giving a \textbf{29\%} reduction in processing time and scaled to handle \textbf{3x} data.}
+                \resumeItemListEnd
+            
+     
+        	% \resumeSubItem{Automatic License Plate Recognition System}
+                % \resumeItemListStart
+                     % \resumeItem{}{Trained a license plate detection model using image segmentation and Keras, achieving over 95\% accuracy. The model enables real-time processing making it suitable for applications such as traffic monitoring and toll collection systems.}
+                % \resumeItemListEnd
+                
+            % \resumeSubItem{Resume Screener}
+                % \resumeItemListStart
+                    % \resumeItem{}{Used Natural Language Processing to automate the task of sorting resumes. Using models like LSTMs and Recurrent Neural Networks, implemented multiclass classification task so that it can be divided according to the applied role of the applicant.}
+                % \resumeItemListEnd
+                
+            % \resumeSubItem{Movie recommendation system}
+                % \resumeItemListStart
+                    %  \resumeItem{}{Built a movie recommendation system that takes into account the previously watched movies and suggests accordingly. Added the feature to filter out the suggested movies to further improve the recommendation system.}
+            %  \resumeItemListEnd
         
- 
-	\resumeSubItem{Automatic License Plate Recognition System}
-        \newline{}
-        \vspace{3pt}
-	Automated the process of detecting the license plate using just a photo of vehicle. Optimized the detection time to enable real-time detection and applications. Implemented it using image segmentation and image processing using Keras.
-        
-        % \resumeSubItem{Resume Screener}
-        % \newline{}
-        % \vspace{3pt}
-        % Used Natural Language Processing to automate the task of sorting resumes. Using models like LSTMs and Recurrent Neural Networks, implemented multiclass classification task so that it can be divided according to the applied role of the applicant.
-        
-        \resumeSubItem{Movie recommendation system}
-        \newline{}
-        \vspace{3pt}
-        Built a movie recommendation system that takes into account the previously watched movies and suggests accordingly. Added the feature to filter out the suggested movies to further improve the recommendation system.
-
-        %  \resumeSubItem{Multi-Lingual Voice Assistant}
-        % \newline{}
-        % \vspace{3pt}
-        % Built a Dialogflow based voice assistant with Django and used Google Translate API to satisfy the translation and enable language switching in between conversations. Used Redis to reduce the average response time by 50\% i.e. from 6 sec to 3 sec.
-        
-	 
-	\vspace{7pt}
-		
-		\resumeSubHeadingListEnd
+            %  \resumeSubItem{Multi-Lingual Voice Assistant}
+            % \resumeItemListStart
+                % \resumeItem{}{ % Built a Dialogflow based voice assistant with Django and used Google Translate API to satisfy the translation and enable language switching in between conversations. Used Redis to reduce the average response time by 50\% i.e. from 6 sec to 3 sec.           
+            % \resumeItemListEnd
+            
+    	 
+    	   \vspace{7pt}
+		}
+	\resumeSubHeadingListEnd
 		
 	\end{document}
